@@ -6,7 +6,28 @@
 [node name="Level 1" type="Node2D"]
 
 [node name="Platform 1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 477, -2 )
+position = Vector2( 203.967, 293.257 )
+
+[node name="Platform 2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 447.722, 296.431 )
+
+[node name="Platform 3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 561.739, 295.111 )
+
+[node name="Platform 4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 945.97, -2.00003 )
+
+[node name="Platform 5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1098.8, -10.9899 )
+
+[node name="Platform 6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1208.17, -7.99326 )
+
+[node name="Platform 7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 83.3801, 289.905 )
+
+[node name="Platform 8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 335.031, 292.239 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 6, 10 )
+position = Vector2( 86.9575, 137.081 )
