@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://PlayerSprite/Walk 1.png" type="Texture" id=1]
 [ext_resource path="res://PlayerSprite/Walk 3.png" type="Texture" id=2]
 [ext_resource path="res://PlayerSprite/Walk 2.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Player.gd" type="Script" id=4]
+[ext_resource path="res://PlayerSprite/Jump.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -12,23 +13,30 @@ animations = [ {
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [  ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 63.3432
-height = 54.307
+radius = 13.9567
+height = 119.807
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_bottom = 720
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 6.98721, -0.650505 )
@@ -37,5 +45,5 @@ frames = SubResource( 1 )
 animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 6.52436, 5.4892 )
+position = Vector2( 7.08558, 1.56058 )
 shape = SubResource( 2 )
