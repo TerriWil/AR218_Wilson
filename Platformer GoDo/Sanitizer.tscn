@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2.24481, -15.7145 )
+position = Vector2( -1.99298, -19.9524 )
 shape = SubResource( 1 )
 
 [connection signal="body_entered" from="." to="." method="_on_Sanitizer_body_entered"]
