@@ -8,6 +8,12 @@ extents = Vector2( 535.302, 1199 )
 [node name="SodaCAN" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+rotation = -0.0610865
+scale = Vector2( 2.80844, 3.17188 )
+texture = ExtResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+rotation = -0.0610865
 scale = Vector2( 2.80844, 3.17188 )
 texture = ExtResource( 1 )
 
