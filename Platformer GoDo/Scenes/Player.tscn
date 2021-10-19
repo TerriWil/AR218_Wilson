@@ -13,14 +13,14 @@ animations = [ {
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 } ]
 
@@ -47,7 +47,3 @@ animation = "Walk"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 7.08558, 1.56058 )
 shape = SubResource( 2 )
-
-[node name="groundcheck" type="RayCast2D" parent="."]
-position = Vector2( 32.5513, 16.2757 )
-enabled = true

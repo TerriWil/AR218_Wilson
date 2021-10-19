@@ -59,9 +59,10 @@ __meta__ = {
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -24.5407, 190.663 )
+collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 4.76221, 849.259 )
+[node name="FallZone" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 6.54401, 849.259 )
 shape = SubResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
@@ -95,62 +96,62 @@ rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN6" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 23.656, 483.96 )
+position = Vector2( -34.8642, 450.924 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN7" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 132.117, 478.968 )
+position = Vector2( 72.6529, 450.652 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN8" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 240.163, 472.43 )
+position = Vector2( 182.587, 453.552 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN9" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 356.212, 480.467 )
+position = Vector2( 316.569, 455.926 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN10" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 487.664, 474.077 )
+position = Vector2( 441.414, 461.807 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN11" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 610.731, 472.881 )
+position = Vector2( 548.435, 457.779 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN12" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 39.1459, 671.703 )
+position = Vector2( -37.1355, 664.287 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN13" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 164.165, 680.409 )
+position = Vector2( 62.021, 671.429 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN14" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 293.07, 680.558 )
+position = Vector2( 177.456, 676.068 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN15" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 396.624, 674.953 )
+position = Vector2( 294.48, 674.953 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN16" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 505.265, 670.97 )
+position = Vector2( 419.958, 674.337 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
 [node name="SodaCAN17" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 613.812, 671.956 )
+position = Vector2( 532.995, 675.323 )
 rotation = 1.5708
 scale = Vector2( 0.0782195, 0.0321109 )
 
@@ -169,7 +170,7 @@ centered = false
 motion_mirroring = Vector2( 1024, 1024 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( 41.7806, 908.093 )
+position = Vector2( 41.7806, 904.093 )
 scale = Vector2( 4.09672, 3.4375 )
 texture = ExtResource( 5 )
 centered = false
@@ -217,27 +218,27 @@ position = Vector2( 608.286, 372.65 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer11" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 47.1603, 595.656 )
+position = Vector2( -17.9425, 579.942 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer12" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 168.937, 596.453 )
+position = Vector2( 74.6501, 589.718 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer13" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 303.338, 598.201 )
+position = Vector2( 189.969, 591.466 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer14" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 407.63, 587.042 )
+position = Vector2( 304.364, 597.144 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer15" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 522.283, 594.602 )
+position = Vector2( 432.486, 592.357 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Sanitizer16" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 626.857, 588.302 )
+position = Vector2( 548.285, 597.282 )
 scale = Vector2( 0.0800002, 0.0800002 )
 
 [node name="Enemies" type="Node2D" parent="."]
@@ -246,10 +247,10 @@ scale = Vector2( 0.0800002, 0.0800002 )
 position = Vector2( 477.624, 148.011 )
 
 [node name="Enemy2" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 332.288, 381.747 )
+position = Vector2( 326.676, 100.009 )
 
 [node name="Enemy3" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 569.02, 575.029 )
+position = Vector2( 639.378, 470.541 )
 
 [connection signal="body_entered" from="Area2D" to="Player" method="_on_Area2D_body_entered"]
 [connection signal="money_collected" from="Money/Sanitizer" to="HUB/ScoreLabel" method="_on_Sanitizer_money_collected"]

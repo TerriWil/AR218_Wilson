@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://PlayerSprite/Walk 1.png" type="Texture" id=1]
 [ext_resource path="res://PlayerSprite/Walk 3.png" type="Texture" id=2]
@@ -13,14 +13,14 @@ animations = [ {
 "name": "Walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
 "speed": 5.0
 } ]
 
@@ -28,20 +28,18 @@ animations = [ {
 radius = 13.9567
 height = 119.807
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 43.3984, 97.0651 )
+
 [node name="Enemy" type="KinematicBody2D"]
 self_modulate = Color( 1, 0.913725, 0.913725, 1 )
+collision_layer = 16
+collision_mask = 3
 script = ExtResource( 4 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-limit_bottom = 720
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 self_modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 6.98721, -2.14883 )
+position = Vector2( 6.98721, -11.5876 )
 scale = Vector2( 0.66629, 0.635005 )
 frames = SubResource( 1 )
 animation = "Idle"
@@ -49,3 +47,24 @@ animation = "Idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 7.08558, 1.56058 )
 shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ground_check" type="RayCast2D" parent="."]
+position = Vector2( 32.5513, 16.2757 )
+enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="player_checker" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_checker"]
+position = Vector2( 10.3827, -20.7652 )
+shape = SubResource( 3 )
+
+[node name="Fade_Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="player_checker" to="." method="_on_player_checker_body_entered"]
