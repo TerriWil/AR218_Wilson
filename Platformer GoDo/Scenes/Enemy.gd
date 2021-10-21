@@ -31,7 +31,7 @@ func  _process(delta):
 	if is_on_wall():
 		flip_enemy()
 	if not can_fall:
-		if not $ground_checker .is_colliding and is_on_floor():
+		if not $ground_check.is_colliding() and is_on_floor():
 			flip_enemy()
 	velocity.y += GRAVITY
 	velocity.x = speed * direction
