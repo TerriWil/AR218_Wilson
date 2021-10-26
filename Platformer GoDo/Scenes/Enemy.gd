@@ -72,5 +72,5 @@ func _on_player_checker_body_entered(body):
 			
 
 func _on_Fade_Timer_timeout():
-	
+	print(get_parent().get_child_count())
 	queue_free()

@@ -32,5 +32,5 @@ func _physics_process(delta):
 	velocity.x = lerp(velocity.x, 0,0.1)
 
 func _on_Area2D_body_entered(body):
-		get_tree(). change_scene("res://Scenes/Level 1.tscn")
+		get_tree().change_scene("res://Scenes/Level 1.tscn")
 		pass # Replace with function body.

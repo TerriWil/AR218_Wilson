@@ -9,6 +9,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "Walk",
@@ -18,16 +23,11 @@ animations = [ {
 "loop": true,
 "name": "Idle",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 13.9567
-height = 119.807
+radius = 11.7118
+height = 87.1025
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 4 )
@@ -41,12 +41,12 @@ smoothing_enabled = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 6.98721, -0.650505 )
-scale = Vector2( 0.66629, 0.635005 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 7.08558, 1.56058 )
+position = Vector2( 11.1963, 0.225741 )
 shape = SubResource( 2 )
 
 [node name="JumpSoundPlayer" type="AudioStreamPlayer2D" parent="."]

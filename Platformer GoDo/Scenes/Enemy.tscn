@@ -8,6 +8,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "Walk",
@@ -16,11 +21,6 @@ animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "Jump",
 "speed": 5.0
 } ]
 
@@ -68,3 +68,4 @@ shape = SubResource( 3 )
 [node name="Fade_Timer" type="Timer" parent="."]
 
 [connection signal="body_entered" from="player_checker" to="." method="_on_player_checker_body_entered"]
+[connection signal="timeout" from="Fade_Timer" to="." method="_on_Fade_Timer_timeout"]
