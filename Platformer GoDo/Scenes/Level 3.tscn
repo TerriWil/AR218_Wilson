@@ -11,7 +11,7 @@
 [ext_resource path="res://Audio/Level 1.ogg" type="AudioStream" id=9]
 [ext_resource path="res://Audio/Collect Item.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Scenes/Goal.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Level 2.gd" type="Script" id=12]
+[ext_resource path="res://Scenes/Level 3.gd" type="Script" id=12]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.368627, 0.835294, 0.603922, 1 )
@@ -32,7 +32,7 @@ font_data = ExtResource( 4 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 2978.08, 21.2402 )
 
-[node name="Level 2" type="Node2D"]
+[node name="Level 3" type="Node2D"]
 position = Vector2( 0, -2.66968 )
 script = ExtResource( 12 )
 
@@ -84,13 +84,8 @@ position = Vector2( 79.8647, 165.303 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
-[node name="SodaCAN2" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 156.007, 167.563 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
 [node name="SodaCAN3" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 214.143, 75.3659 )
+position = Vector2( 145.189, 166.183 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -105,27 +100,17 @@ rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN6" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 461.264, 165.819 )
+position = Vector2( 414.174, 164.137 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN7" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 608.665, 163.005 )
+position = Vector2( 568.302, 168.05 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN8" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 594.53, 266.101 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN9" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 518.612, 265.107 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN10" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 440.292, 267.621 )
+position = Vector2( 655.075, 249.283 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -190,12 +175,12 @@ rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN29" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 540.176, 360.13 )
+position = Vector2( 652.856, 344.994 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN30" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 612.219, 359.071 )
+position = Vector2( 795.534, 340.571 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -229,18 +214,8 @@ position = Vector2( 213.679, 564.688 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
-[node name="SodaCAN36" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 237.261, 535.998 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
 [node name="SodaCAN37" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 312.096, 539.561 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN39" parent="Soda Cans" instance=ExtResource( 1 )]
-position = Vector2( 456.422, 584.105 )
+position = Vector2( 339.005, 608.514 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -311,48 +286,28 @@ position = Vector2( 79.8647, 165.303 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
-[node name="SodaCAN2" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 156.007, 167.563 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
 [node name="SodaCAN3" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 253.343, 96.7475 )
+position = Vector2( 206.253, 111.884 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN4" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 309.08, 107.22 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN5" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 382.86, 165.53 )
+position = Vector2( 288.898, 108.902 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN6" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 535.481, 165.419 )
+position = Vector2( 498.482, 167.101 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN7" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 672.646, 263.45 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN8" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 594.53, 266.101 )
+position = Vector2( 802.144, 194.497 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN9" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 518.612, 265.107 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN10" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 440.292, 267.621 )
+position = Vector2( 510.203, 248.289 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -417,12 +372,12 @@ rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN29" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 540.176, 360.13 )
+position = Vector2( 723.492, 343.312 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
 [node name="SodaCAN30" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 613.901, 360.753 )
+position = Vector2( 965.396, 350.662 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -461,18 +416,8 @@ position = Vector2( 191.816, 561.324 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
-[node name="SodaCAN36" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 237.261, 535.998 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
 [node name="SodaCAN37" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 312.096, 539.561 )
-rotation = 1.5708
-scale = Vector2( 0.02, 0.03 )
-
-[node name="SodaCAN38" parent="Soda Cans/Soda Cans2" instance=ExtResource( 1 )]
-position = Vector2( 388.714, 584.106 )
+position = Vector2( 411.322, 544.606 )
 rotation = 1.5708
 scale = Vector2( 0.02, 0.03 )
 
@@ -554,7 +499,7 @@ centered = false
 [node name="Money" type="Node2D" parent="."]
 
 [node name="Sanitizer" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 43.8813, 489.92 )
+position = Vector2( 1021, 599.237 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer2" parent="Money" instance=ExtResource( 3 )]
@@ -570,27 +515,27 @@ position = Vector2( 812.837, 506.324 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer5" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 397.539, 119.028 )
+position = Vector2( 224.314, 65.2106 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer6" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 466.901, 118.781 )
+position = Vector2( 297.04, 66.6454 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer7" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 553.547, 122.687 )
+position = Vector2( 513.184, 129.414 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer8" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 402.07, 219.187 )
+position = Vector2( 178.392, 224.232 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer9" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 463.552, 221.53 )
+position = Vector2( 258.373, 226.575 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer10" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 535.326, 217.75 )
+position = Vector2( 318.375, 221.114 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer11" parent="Money" instance=ExtResource( 3 )]
@@ -610,15 +555,15 @@ position = Vector2( 215.473, 307.327 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer20" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 277.835, 496.198 )
+position = Vector2( 409.015, 514.698 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer21" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 227.945, 499.761 )
+position = Vector2( 328.853, 572.078 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer22" parent="Money" instance=ExtResource( 3 )]
-position = Vector2( 340.199, 497.979 )
+position = Vector2( 506.697, 481.161 )
 scale = Vector2( 0.04, 0.04 )
 
 [node name="Sanitizer23" parent="Money" instance=ExtResource( 3 )]
@@ -632,11 +577,11 @@ scale = Vector2( 0.04, 0.04 )
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Enemy" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 967.51, 483.805 )
+position = Vector2( 1095.33, 601.53 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Enemy2" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 592.788, 310.42 )
+position = Vector2( 808.058, 142.241 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Enemy3" parent="Enemies" instance=ExtResource( 8 )]
@@ -644,11 +589,19 @@ position = Vector2( 359.182, 405.344 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Enemy4" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 289.692, 309.127 )
+position = Vector2( 462.917, 314.172 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Enemy5" parent="Enemies" instance=ExtResource( 8 )]
-position = Vector2( 637.143, 510.47 )
+position = Vector2( 637.143, 512.152 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Enemy6" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 452.146, 95.0673 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Enemy7" parent="Enemies" instance=ExtResource( 8 )]
+position = Vector2( 119.151, 401.154 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

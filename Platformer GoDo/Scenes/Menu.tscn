@@ -24,12 +24,14 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="DynamicFont" id=2]
+size = 30
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.380392, 0.643137, 0.0941176, 1 )
+bg_color = Color( 0.243137, 0.313726, 0.172549, 1 )
 border_color = Color( 0.871094, 0.132706, 0.824944, 1 )
 border_blend = true
+shadow_size = 4
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.741176, 0.337255, 0.337255, 1 )
@@ -38,7 +40,7 @@ bg_color = Color( 0.741176, 0.337255, 0.337255, 1 )
 bg_color = Color( 0.760784, 0.345098, 0.345098, 1 )
 
 [sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.698039, 0.27451, 0.27451, 1 )
+bg_color = Color( 0.207843, 0.745098, 0.737255, 1 )
 border_color = Color( 0.0823529, 0.345098, 0.647059, 1 )
 border_blend = true
 
@@ -46,10 +48,11 @@ border_blend = true
 script = ExtResource( 8 )
 
 [node name="Background" type="ColorRect" parent="."]
-margin_left = 17.0
-margin_top = -4.0
-margin_right = 1297.0
+margin_left = 14.8447
+margin_top = -3.99999
+margin_right = 1294.84
 margin_bottom = 716.0
+color = Color( 0.239216, 0.243137, 0.458824, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -209,10 +212,10 @@ __meta__ = {
 }
 
 [node name="TextureRect -15" type="TextureRect" parent="Background"]
-margin_left = 522.147
-margin_top = 254.164
-margin_right = 1546.15
-margin_bottom = 1278.16
+margin_left = 531.552
+margin_top = 253.042
+margin_right = 1555.55
+margin_bottom = 1277.04
 rect_scale = Vector2( 1.03896, 1.17383 )
 texture = ExtResource( 4 )
 __meta__ = {
@@ -230,10 +233,10 @@ __meta__ = {
 }
 
 [node name="Title" type="Label" parent="HUB"]
-margin_left = 17.5874
-margin_top = 4.4126
-margin_right = 1280.59
-margin_bottom = 44.4126
+margin_left = 24.3221
+margin_top = -3.44463
+margin_right = 1287.32
+margin_bottom = 36.5554
 custom_fonts/font = SubResource( 2 )
 text = "Menu Selections"
 align = 1
@@ -242,10 +245,11 @@ __meta__ = {
 }
 
 [node name="Title2" type="Label" parent="HUB"]
-margin_left = 291.688
-margin_top = 47.8882
-margin_right = 431.688
-margin_bottom = 71.8882
+visible = false
+margin_left = 289.688
+margin_top = 44.8882
+margin_right = 429.688
+margin_bottom = 68.8882
 rect_scale = Vector2( 1.42158, 2.31408 )
 custom_styles/normal = SubResource( 3 )
 custom_fonts/font = SubResource( 2 )
@@ -255,25 +259,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Title3" type="Label" parent="HUB"]
-margin_left = 588.523
-margin_top = 201.888
-margin_right = 728.523
-margin_bottom = 225.888
-rect_scale = Vector2( 1.42158, 2.31408 )
-custom_styles/normal = SubResource( 3 )
-custom_fonts/font = SubResource( 2 )
-text = "Instructions "
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Title4" type="Label" parent="HUB"]
-margin_left = 884.091
-margin_top = 48.1181
-margin_right = 1024.09
-margin_bottom = 72.1181
+margin_left = 539.6
+margin_top = 208.118
+margin_right = 742.6
+margin_bottom = 245.118
 rect_scale = Vector2( 1.42158, 2.31408 )
 custom_styles/normal = SubResource( 3 )
 custom_fonts/font = SubResource( 2 )
@@ -283,11 +273,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="."]
-margin_left = 627.0
-margin_top = 112.0
-margin_right = 690.0
-margin_bottom = 132.0
+[node name="Play" type="Button" parent="."]
+margin_left = 628.0
+margin_top = 113.0
+margin_right = 691.0
+margin_bottom = 133.0
 rect_scale = Vector2( 2.19721, 2.25988 )
 custom_styles/hover = SubResource( 4 )
 custom_styles/pressed = SubResource( 5 )
@@ -300,8 +290,44 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Statement" type="Button" parent="."]
+margin_left = 268.367
+margin_top = 53.2449
+margin_right = 386.367
+margin_bottom = 73.2449
+rect_scale = Vector2( 2.19721, 2.25988 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Artist Statement"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instructions" type="Button" parent="."]
+margin_left = 904.803
+margin_top = 56.6123
+margin_right = 1022.8
+margin_bottom = 76.6123
+rect_scale = Vector2( 2.19721, 2.25988 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Instructions "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 9 )
 autoplay = true
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Statement" to="." method="_on_Statement_pressed"]
+[connection signal="pressed" from="Instructions" to="." method="_on_Instructions_pressed"]
