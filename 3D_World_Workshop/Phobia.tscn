@@ -1,0 +1,170 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://default_env.tres" type="Environment" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+params_cull_mode = 2
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 10, 2, 2 )
+
+[sub_resource type="CubeMesh" id=9]
+
+[sub_resource type="ConcavePolygonShape" id=6]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=7]
+
+[sub_resource type="SpatialMaterial" id=8]
+params_cull_mode = 2
+
+[node name="Mixed Emotions" type="Spatial"]
+
+[node name="BW" type="MeshInstance" parent="."]
+transform = Transform( 64.9837, -0.210755, 0.0382304, 0.35826, 42.9825, -0.0489476, -1.4105, 1.20759, 1.7489, 4.44577, 48.066, 130.256 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="FW-1" type="MeshInstance" parent="."]
+transform = Transform( 64.9989, -0.0855083, -3.92746e-05, 0.370538, 14.9997, 0.00534494, 0.000327033, -0.0458149, 1.74999, 2.1958, 96.643, -123.568 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="FW-2" type="MeshInstance" parent="."]
+transform = Transform( 0.640252, -14.9815, 0.0822537, 39.9949, 0.240444, 0.000206822, -0.0348585, 0.704913, 1.74807, -43.4732, 42.8626, -121.546 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="FW-3" type="MeshInstance" parent="."]
+transform = Transform( -0.563807, -14.9984, -0.00534442, 39.996, -0.211426, -8.41434e-05, 0.000201248, -0.0458149, 1.74999, 52.0001, 43.3916, -121.977 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="Ceiling-2" type="MeshInstance" parent="."]
+transform = Transform( 8.66029, 0.177402, -0.874985, 4.9999, -0.781962, 1.51552, -0.0175809, -134.998, -0.00992835, -37.3235, 128.37, 0.161896 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 2 )
+
+[node name="Ceiling-4" type="MeshInstance" parent="."]
+transform = Transform( 8.66019, -0.588507, 0.874986, -5.00008, -0.544611, 1.51552, -0.0175817, -134.998, -0.00992835, 49.7482, 129.035, 0.161896 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 2 )
+
+[node name="LW" type="MeshInstance" parent="."]
+transform = Transform( -1.74173, -2.59523, 1.74791, -0.956973, 54.9376, 0.0824203, -134.985, -0.355991, -0.0231377, 68.4475, 61.3527, 2.72812 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="RW" type="MeshInstance" parent="."]
+transform = Transform( 1.58284, -0.917712, 1.74964, -1.75639, 54.9876, 0.0294664, -134.979, -0.726276, 0.0201337, -60.179, 58.902, 0.0945578 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 0.00456342, 0.02656, 0.999637, -0.0117239, 0.99958, -0.026505, -0.999921, -0.0115987, 0.00487289, 44.4093, 25.5565, -61.4264 )
+light_color = Color( 0.207843, 0.462745, 0.101961, 1 )
+omni_range = 106.1
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 0.00416202, 0.0265554, 0.999639, -0.307582, 0.951219, -0.0239885, -0.951512, -0.307371, 0.012127, -26.2973, 30.5689, -66.454 )
+light_color = Color( 0.0823529, 0.360784, 0.509804, 1 )
+shadow_enabled = true
+omni_range = 106.1
+
+[node name="OmniLight3" type="OmniLight" parent="."]
+transform = Transform( 0.00416202, 0.0265554, 0.999639, -0.307582, 0.951219, -0.0239885, -0.951512, -0.307371, 0.012127, 40.5058, 26.4882, 45.9105 )
+light_color = Color( 0.447059, 0.14902, 0.14902, 1 )
+shadow_enabled = true
+omni_range = 106.1
+
+[node name="OmniLight4" type="OmniLight" parent="."]
+transform = Transform( 0.00416202, 0.0265554, 0.999639, -0.307582, 0.951219, -0.0239885, -0.951512, -0.307371, 0.012127, -35.9452, 21.4515, 48.4486 )
+light_color = Color( 0.615686, 0.603922, 0.239216, 1 )
+shadow_enabled = true
+omni_range = 106.1
+
+[node name="OmniLight5" type="OmniLight" parent="."]
+transform = Transform( 0.00416202, 0.0265554, 0.999639, -0.307582, 0.951219, -0.0239885, -0.951512, -0.307371, 0.012127, 5.05821, 27.1064, -20.4643 )
+light_color = Color( 0.415686, 0.388235, 0.388235, 1 )
+shadow_enabled = true
+omni_range = 106.1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 2 )
+
+[node name="FirstPersonPlayer" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0893664, 25.4314, 0.0381813 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="Floor" type="MeshInstance" parent="StaticBody"]
+transform = Transform( 74.9992, -0.0769072, 0.00805865, 0.345378, 0.0209691, -1.74998, 0.0426722, 135, 0.000276409, 5.43104, 3.84229, 2.6258 )
+mesh = SubResource( 9 )
+material/0 = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 55.7494, 0.778237, -7.4414e-10, 0, -3.49691e-06, -1.75, -0.542353, 79.9962, -7.64913e-08, 2.36708, 4.0776, -1.18443 )
+shape = SubResource( 6 )
+
+[node name="Table" type="MeshInstance" parent="."]
+transform = Transform( -10, 0, -0.00157082, 0, 1, 0, 0.00157082, 0, -10, 2.61632, 14.5249, -10.1981 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV" type="MeshInstance" parent="."]
+transform = Transform( 0.24281, -0.999258, -0.14951, 0.306182, -0.0291535, 4.99553, -9.99236, -0.0251748, 0.149438, 56.3352, 19.5544, 0.0586548 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Table Legs" type="MeshInstance" parent="."]
+transform = Transform( -0.284797, 0.498638, -0.0378937, 4.48348, 0.0326652, 0.0553274, 0.259435, -0.0171265, -0.997749, 10.4917, 10.3207, -18.8373 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Table Legs2" type="MeshInstance" parent="."]
+transform = Transform( -0.429389, 0.497323, -0.0396601, 4.47195, 0.0487457, 0.0540752, 0.259435, -0.0171265, -0.997749, 11.1471, 10.121, -1.81426 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Table Legs3" type="MeshInstance" parent="."]
+transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -5.93286, 10.3078, -2.00629 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Table Legs4" type="MeshInstance" parent="."]
+transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -6.55268, 10.3078, -18.1041 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Mount" type="MeshInstance" parent="."]
+transform = Transform( -0.258071, 0.496687, 0.00711651, -0.0364387, -0.00451633, 0.999828, 2.23485, 0.0572817, 0.0171237, 56.1773, 13.6673, -0.869643 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Stand" type="MeshInstance" parent="."]
+transform = Transform( 0.38318, 0, 4.99633, 0, 1, 0, -9.99266, 0, 0.19159, 54.1261, 11.2837, -0.0163651 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Legs -1" type="MeshInstance" parent="."]
+transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 57.8379, 8.37812, -9.36311 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Legs -2" type="MeshInstance" parent="."]
+transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 50.6885, 7.99564, -9.48312 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Legs -3" type="MeshInstance" parent="."]
+transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 57.5801, 8.41695, 9.69396 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="TV Legs -4" type="MeshInstance" parent="."]
+transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 51.7464, 8.12619, 8.89212 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
