@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://default_env.tres" type="Environment" id=2]
@@ -11,14 +11,20 @@ params_cull_mode = 2
 [sub_resource type="CubeMesh" id=3]
 size = Vector3( 10, 2, 2 )
 
-[sub_resource type="CubeMesh" id=9]
+[sub_resource type="CubeMesh" id=4]
 
-[sub_resource type="ConcavePolygonShape" id=6]
+[sub_resource type="ConcavePolygonShape" id=5]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
 
-[sub_resource type="CubeMesh" id=7]
+[sub_resource type="CubeMesh" id=6]
 
-[sub_resource type="SpatialMaterial" id=8]
+[sub_resource type="SpatialMaterial" id=7]
+params_cull_mode = 2
+
+[sub_resource type="CubeMesh" id=8]
+size = Vector3( 7, 7, 7 )
+
+[sub_resource type="SpatialMaterial" id=9]
 params_cull_mode = 2
 
 [node name="Mixed Emotions" type="Spatial"]
@@ -102,69 +108,74 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0893664, 25.4314, 0.0381813
 
 [node name="Floor" type="MeshInstance" parent="StaticBody"]
 transform = Transform( 74.9992, -0.0769072, 0.00805865, 0.345378, 0.0209691, -1.74998, 0.0426722, 135, 0.000276409, 5.43104, 3.84229, 2.6258 )
-mesh = SubResource( 9 )
+mesh = SubResource( 4 )
 material/0 = SubResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 55.7494, 0.778237, -7.4414e-10, 0, -3.49691e-06, -1.75, -0.542353, 79.9962, -7.64913e-08, 2.36708, 4.0776, -1.18443 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Table" type="MeshInstance" parent="."]
-transform = Transform( -10, 0, -0.00157082, 0, 1, 0, 0.00157082, 0, -10, 2.61632, 14.5249, -10.1981 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+transform = Transform( -10, 0, -0.00157082, 0, 1, 0, 0.00157082, 0, -10, 2.61632, 14.5249, 62.4806 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV" type="MeshInstance" parent="."]
 transform = Transform( 0.24281, -0.999258, -0.14951, 0.306182, -0.0291535, 4.99553, -9.99236, -0.0251748, 0.149438, 56.3352, 19.5544, 0.0586548 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="Table Legs" type="MeshInstance" parent="."]
-transform = Transform( -0.284797, 0.498638, -0.0378937, 4.48348, 0.0326652, 0.0553274, 0.259435, -0.0171265, -0.997749, 10.4917, 10.3207, -18.8373 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+transform = Transform( -0.284797, 0.498638, -0.0378937, 4.48348, 0.0326652, 0.0553274, 0.259435, -0.0171265, -0.997749, 10.4917, 10.3207, 53.8414 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="Table Legs2" type="MeshInstance" parent="."]
-transform = Transform( -0.429389, 0.497323, -0.0396601, 4.47195, 0.0487457, 0.0540752, 0.259435, -0.0171265, -0.997749, 11.1471, 10.121, -1.81426 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+transform = Transform( -0.429389, 0.497323, -0.0396601, 4.47195, 0.0487457, 0.0540752, 0.259435, -0.0171265, -0.997749, 11.1471, 10.121, 70.8644 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="Table Legs3" type="MeshInstance" parent="."]
-transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -5.93286, 10.3078, -2.00629 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -5.93286, 10.3078, 70.6724 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="Table Legs4" type="MeshInstance" parent="."]
-transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -6.55268, 10.3078, -18.1041 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+transform = Transform( 0.316696, 0.498532, -0.0301629, 4.48134, -0.0342398, 0.0598936, 0.259435, -0.0171265, -0.997749, -6.55268, 10.3078, 54.5746 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Mount" type="MeshInstance" parent="."]
 transform = Transform( -0.258071, 0.496687, 0.00711651, -0.0364387, -0.00451633, 0.999828, 2.23485, 0.0572817, 0.0171237, 56.1773, 13.6673, -0.869643 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Stand" type="MeshInstance" parent="."]
 transform = Transform( 0.38318, 0, 4.99633, 0, 1, 0, -9.99266, 0, 0.19159, 54.1261, 11.2837, -0.0163651 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Legs -1" type="MeshInstance" parent="."]
 transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 57.8379, 8.37812, -9.36311 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Legs -2" type="MeshInstance" parent="."]
 transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 50.6885, 7.99564, -9.48312 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Legs -3" type="MeshInstance" parent="."]
 transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 57.5801, 8.41695, 9.69396 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 
 [node name="TV Legs -4" type="MeshInstance" parent="."]
 transform = Transform( -0.135714, -0.00206721, 0.998171, 2.24392, 0.0208618, 0.0604375, -0.0942688, 0.49956, 0.0016066, 51.7464, 8.12619, 8.89212 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.6323, 0 )
+mesh = SubResource( 8 )
+material/0 = SubResource( 9 )
