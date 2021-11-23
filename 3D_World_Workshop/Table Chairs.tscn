@@ -1,0 +1,131 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Table Chairs" type="Spatial"]
+transform = Transform( 0.995627, 0, 0, 0, 0.995627, 0, 0, 0, 0.995627, 0, 0, 0 )
+
+[node name="Chair Back 1" type="MeshInstance" parent="."]
+transform = Transform( 0.00404373, 0.000428056, -1.77824, 0.000377586, 2.11727, 0.000391668, 0.291017, -0.00275305, 0.0247085, -3.23417, 4.41909, -8.1621 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Seat 2" type="MeshInstance" parent="."]
+transform = Transform( -8.9878e-06, -0.02942, -1.77824, 0.290997, -0.038257, 0.000391668, -0.00525928, -2.11672, 0.0247085, -2.95475, 2.8278, -5.7706 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg1" type="MeshInstance" parent="."]
+transform = Transform( 0.00465985, 0.000493276, -0.275589, 0.000435117, 2.43987, 6.07001e-05, 0.335358, -0.00317252, 0.00382929, -4.7267, -0.0430334, -7.79457 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg2" type="MeshInstance" parent="."]
+transform = Transform( 0.00465985, 0.000493276, -0.275589, 0.000435117, 2.43987, 6.07001e-05, 0.335358, -0.00317252, 0.00382929, -1.37274, -0.107694, -5.40739 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg3" type="MeshInstance" parent="."]
+transform = Transform( 0.00465985, 0.000493276, -0.275589, 0.000435117, 2.43987, 6.07001e-05, 0.335358, -0.00317252, 0.00382929, -4.44343, -0.149387, -5.45163 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg4" type="MeshInstance" parent="."]
+transform = Transform( 0.00465985, 0.000493276, -0.275589, 0.000435117, 2.43987, 6.07001e-05, 0.335358, -0.00317252, 0.00382929, -1.69543, -0.165555, -8.26456 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Back 2" type="MeshInstance" parent="."]
+transform = Transform( 0.00762882, 0, 1.7778, 0.00934182, 2.11618, -0.00149676, -0.290795, 0.0679824, 0.0465915, -2.7828, 4.30797, 6.25862 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Seat 3" type="MeshInstance" parent="."]
+transform = Transform( -0.00012795, -0.0554897, 1.7778, 0.290697, -0.103442, -0.00149676, 0.0142209, 2.11401, 0.0465915, -3.0244, 2.74957, 3.74505 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg5" type="MeshInstance" parent="."]
+transform = Transform( 0.00879117, 0, 0.275521, 0.0107652, 2.43861, -0.000231965, -0.335102, 0.0783407, 0.00722066, -1.31969, -0.142936, 5.67386 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg6" type="MeshInstance" parent="."]
+transform = Transform( 0.00879117, 0, 0.275521, 0.0107652, 2.43861, -0.000231965, -0.335102, 0.0783407, 0.00722066, -4.57524, -0.129084, 3.21975 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg7" type="MeshInstance" parent="."]
+transform = Transform( 0.00879117, 0, 0.275521, 0.0107652, 2.43861, -0.000231965, -0.335102, 0.0783407, 0.00722066, -1.50881, -0.17669, 3.38569 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg8" type="MeshInstance" parent="."]
+transform = Transform( 0.00879117, 0, 0.275521, 0.0107652, 2.43861, -0.000231965, -0.335102, 0.0783407, 0.00722066, -4.3674, -0.275354, 6.08443 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Back 3" type="MeshInstance" parent="."]
+transform = Transform( 0.291045, 0, 0, 0, 2.11727, 0, 0, 0, 1.77842, -14.338, 4.9057, 0.00131341 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Seat 4" type="MeshInstance" parent="."]
+transform = Transform( -0.00488137, -2.11697, 0, 0.291004, -0.0355107, 0, 0, 0, 1.77842, -11.9449, 3.31135, -0.245204 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg9" type="MeshInstance" parent="."]
+transform = Transform( 0.33539, 0, 0, 0, 2.43987, 0, 0, 0, 0.275616, -14.0109, 0.386393, 1.4248 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg10" type="MeshInstance" parent="."]
+transform = Transform( 0.33539, 0, 0, 0, 2.43987, 0, 0, 0, 0.275616, -11.5061, 0.319318, -1.85616 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg11" type="MeshInstance" parent="."]
+transform = Transform( 0.33539, 0, 0, 0, 2.43987, 0, 0, 0, 0.275616, -11.6239, 0.27706, 1.2266 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg12" type="MeshInstance" parent="."]
+transform = Transform( 0.33539, 0, 0, 0, 2.43987, 0, 0, 0, 0.275616, -14.4388, 0.265093, -1.61273 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Back 4" type="MeshInstance" parent="."]
+transform = Transform( -0.290721, 0, 0.0838988, 0, 2.11727, 0, -0.0137304, 0, -1.77644, 8.71664, 3.67232, -1.29773 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Chair Seat 5" type="MeshInstance" parent="."]
+transform = Transform( 0.00487593, 2.11461, 0.0838988, 0.291004, -0.0355106, 0, 0.000230284, 0.0998706, -1.77644, 6.31459, 2.07799, -1.16438 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg13" type="MeshInstance" parent="."]
+transform = Transform( -0.335016, 0, 0.0130025, 0, 2.43987, 0, -0.0158224, 0, -0.275309, 8.44665, -0.790574, -3.00367 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg14" type="MeshInstance" parent="."]
+transform = Transform( -0.335016, 0, 0.0130025, 0, 2.43987, 0, -0.0158224, 0, -0.275309, 5.67434, -0.892057, 0.268777 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg15" type="MeshInstance" parent="."]
+transform = Transform( -0.335016, 0, 0.0130025, 0, 2.43987, 0, -0.0158224, 0, -0.27531, 5.67434, -0.817792, -2.72463 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table Leg16" type="MeshInstance" parent="."]
+transform = Transform( -0.335016, 0, 0.0130025, 0, 2.43987, 0, -0.0158224, 0, -0.275309, 8.73086, -0.911866, 0.245691 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Table" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.57232, -1.83409, 0 )

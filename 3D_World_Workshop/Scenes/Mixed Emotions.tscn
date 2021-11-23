@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://default_env.tres" type="Environment" id=1]
+[ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/TV.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Kitchen Table.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Bed.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Sofa.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Table Chairs.tscn" type="PackedScene" id=8]
+
+[sub_resource type="ConcavePolygonShape" id=7]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[node name="Mixed Emotions" type="Spatial"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 55.7494, 0.778237, -7.4414e-10, 0, -3.49691e-06, -1.75, -0.542353, 79.9962, -7.64913e-08, 2.36708, 4.0776, -1.18443 )
+shape = SubResource( 7 )
+
+[node name="House" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.54061, 0.78927, -0.33511 )
+
+[node name="Kitchen Table" parent="House" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.3434, 12.4372, -0.487392 )
+
+[node name="Bed" parent="House" instance=ExtResource( 6 )]
+transform = Transform( 8.3995, 0, 0, 0, 1.12693, 0, 0, 0, 0.483562, -38.9962, 8.79882, 69.0843 )
+
+[node name="Table Chairs" parent="House" instance=ExtResource( 8 )]
+transform = Transform( 1.47702, 0, 0, 0, 3.18082, 0, 0, 0, 2.36078, -50.6392, 12.0923, -27.7533 )
+
+[node name="TV" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.733743, 0, 0, 0, 3.10051, 0, 0, 0, 2.75137, 81.6568, 6.89232, 0 )
+
+[node name="Table" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.00582941, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00582941, 77.5052, 0.165375, 0 )
+
+[node name="Sofa" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.0151499, 0, 7.23373, 0, 7.13543, 0, -2.07327, 0, 0.00434214, 9.7877, 7.79512, -0.160551 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.19286, 102.777, 10.8519 )
+light_specular = 0.54
+omni_range = 170.3
