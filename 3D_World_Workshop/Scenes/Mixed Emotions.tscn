@@ -69,10 +69,10 @@ tracks/0/keys = {
 [node name="Mixed Emotions" type="Spatial"]
 
 [node name="Person 3" parent="." instance=ExtResource( 11 )]
-transform = Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, 6.14896 )
+transform = Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 35.0705, -11.2799, 55.0143 )
 
 [node name="Table Chairs" parent="." instance=ExtResource( 8 )]
-transform = Transform( 2.53374, 0, 0, 0, 6.46174, 0, 0, 0, 2.36078, -59.7606, 13.0032, -49.1841 )
+transform = Transform( 2.53374, 0, 0, 0, 6.46174, 0, 0, 0, 2.36078, -39.4921, 25.0748, -49.193 )
 
 [node name="Bed" parent="." instance=ExtResource( 6 )]
 transform = Transform( 12.0421, 0, 0, 0, 1.61564, 0, 0, 0, 1.60669, -38.5197, 10.8968, 50.5309 )
@@ -100,17 +100,18 @@ transform = Transform( 0.0215408, 0, 10.2852, 0, 7.13543, 0, -5.80334, 0, 0.0121
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.19286, 236.799, 10.8519 )
+light_color = Color( 0.447059, 0.121569, 0.121569, 1 )
 light_specular = 0.54
-omni_range = 310.8
+omni_range = 512.8
 
 [node name="Person 1" parent="." instance=ExtResource( 9 )]
-transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 24.4077, 44.6437 )
+transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 23.0529, 44.6437 )
 
 [node name="Kitchen Table" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.306, 13.3481, -0.679947 )
 
 [node name="Person 2" parent="." instance=ExtResource( 10 )]
-transform = Transform( 30.9965, 3.60732, -5.02251, -1.54708, 78.6273, -2.99342, 2.42002, 4.06114, 62.4165, -80.7821, 19.3499, -24.5263 )
+transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -67.5089, 18.8911, -28.3368 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Jump = SubResource( 2 )
