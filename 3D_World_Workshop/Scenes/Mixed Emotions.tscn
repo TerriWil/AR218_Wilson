@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Scenes/Person 1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Person 2.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Person 3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=12]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
@@ -32,44 +33,10 @@ tracks/0/keys = {
 "values": [ Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.7004, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 30.5166, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 13.6791, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 33.4108, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 15.3623, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 32.9949, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 17.8956, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 32.9895, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.9222, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 27.5507, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.7004, 44.6437 ) ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "Walk Over "
-length = 1.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Person 3:transform")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 51.4004, -11.2799, -30.5719 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, -30.5719 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, -15.0557 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, 17.2854 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, 35.7773 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 45.4324, -11.2799, 55.0143 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 25.41, -11.2799, 55.0143 ), Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 5.64759, -11.2799, 55.0143 ) ]
-}
-
-[sub_resource type="Animation" id=4]
-resource_name = "Shake Head"
-length = 1.5
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Person 2:transform")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -48.0918, 18.8911, -89.9412 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -48.0918, 18.8911, -67.958 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -48.0918, 18.8911, -46.9651 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -48.0918, 18.8911, -40.9565 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -48.0918, 18.8911, -36.3321 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -67.1863, 18.8911, -28.4343 ), Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -80.8192, 18.8911, -24.3152 ), Transform( 30.9592, -6.62771, -3.8759, -2.19283, -8.17176, -62.1953, 2.39754, 78.1092, -6.83573, -79.922, 29.9767, -29.4165 ) ]
-}
-
 [node name="Mixed Emotions" type="Spatial"]
 
 [node name="Person 3" parent="." instance=ExtResource( 11 )]
-transform = Transform( 32.6837, 0, 0, 0, 67.5464, 0, 0, 0, 29.0826, 35.0705, -11.2799, 55.0143 )
+transform = Transform( -1.98163, 0, 29.0291, 0, 67.5464, 0, -32.6236, 0, -1.76329, 41.3559, -11.2799, -72.9278 )
 
 [node name="Table Chairs" parent="." instance=ExtResource( 8 )]
 transform = Transform( 2.53374, 0, 0, 0, 6.46174, 0, 0, 0, 2.36078, -39.4921, 25.0748, -49.193 )
@@ -105,19 +72,17 @@ light_specular = 0.54
 omni_range = 512.8
 
 [node name="Person 1" parent="." instance=ExtResource( 9 )]
-transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 23.0529, 44.6437 )
+transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.7004, 44.6437 )
 
 [node name="Kitchen Table" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.306, 13.3481, -0.679947 )
 
 [node name="Person 2" parent="." instance=ExtResource( 10 )]
-transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -67.5089, 18.8911, -28.3368 )
+transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -28.796, 19.0907, -89.8558 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Jump"
 anims/Jump = SubResource( 2 )
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-"anims/Walk Over " = SubResource( 3 )
-
-[node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
-"anims/Shake Head" = SubResource( 4 )
+[node name="FirstPersonPlayer" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66404, 25.5394, 12.0303 )

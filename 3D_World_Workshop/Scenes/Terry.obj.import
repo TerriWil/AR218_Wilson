@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Terry.obj-85dcbb5706a0e5663e05242b7051f6df.mesh"
+
+[deps]
+
+files=[ "res://.import/Terry.obj-85dcbb5706a0e5663e05242b7051f6df.mesh" ]
+
+source_file="res://Scenes/Terry.obj"
+dest_files=[ "res://.import/Terry.obj-85dcbb5706a0e5663e05242b7051f6df.mesh", "res://.import/Terry.obj-85dcbb5706a0e5663e05242b7051f6df.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
