@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Scenes/default_env.tres" type="Environment" id=1]
 [ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scenes/Terry.png" type="Texture" id=11]
 [ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Terry.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Audio/Knocking.ogg" type="AudioStream" id=14]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -195,6 +196,11 @@ omni_range = 512.8
 
 [node name="Person 1" parent="." instance=ExtResource( 9 )]
 transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 27.3239, 44.6437 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Person 1"]
+transform = Transform( 0.066177, 0, 0, 0, 0.0235092, 0, 0, 0, 0.0269075, -0.150279, 1.02167, -0.968607 )
+stream = ExtResource( 14 )
+autoplay = true
 
 [node name="Kitchen Table" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.306, 13.3481, -0.679947 )
