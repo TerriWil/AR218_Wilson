@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://default_env.tres" type="Environment" id=1]
+[ext_resource path="res://Scenes/default_env.tres" type="Environment" id=1]
 [ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Materials/White.material" type="Material" id=3]
 [ext_resource path="res://Scenes/Sheep.tscn" type="PackedScene" id=4]
