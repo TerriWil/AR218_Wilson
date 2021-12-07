@@ -1,6 +1,6 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://default_env.tres" type="Environment" id=1]
+[ext_resource path="res://Scenes/default_env.tres" type="Environment" id=1]
 [ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/TV.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=4]
@@ -10,12 +10,14 @@
 [ext_resource path="res://Scenes/Table Chairs.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Person 1.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Person 2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Terry.png" type="Texture" id=11]
 [ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Terry.obj" type="ArrayMesh" id=13]
 
 [sub_resource type="CubeMesh" id=1]
 
 [sub_resource type="SpatialMaterial" id=2]
-params_cull_mode = 2
+albedo_color = Color( 1, 0.541176, 0.541176, 1 )
 
 [sub_resource type="CubeMesh" id=3]
 
@@ -90,7 +92,10 @@ tracks/0/keys = {
 [sub_resource type="ConcavePolygonShape" id=11]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="SpatialMaterial" id=12]
+albedo_texture = ExtResource( 11 )
+
+[sub_resource type="Animation" id=13]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -127,7 +132,7 @@ mesh = SubResource( 4 )
 material/0 = SubResource( 2 )
 
 [node name="Person III\'s Head" type="MeshInstance" parent="Person 3"]
-transform = Transform( 0.0852579, 0, 0, 0, 0.0964702, 0, 0, 0, 0.086677, -0.00520468, 1.15547, -0.00575523 )
+transform = Transform( 0.0852579, 0, 9.31323e-10, 0, 0.0964702, 0, 0, 0, 0.086677, -0.00520456, 1.15547, -0.00575528 )
 mesh = SubResource( 5 )
 material/0 = SubResource( 2 )
 
@@ -138,12 +143,12 @@ anims/Walk = SubResource( 6 )
 [node name="Person III\'s Left Leg" type="MeshInstance" parent="Person 3"]
 transform = Transform( -0.0584742, 0.00112215, -4.42696e-09, 0.000599041, 0.109536, 0, 5.11198e-09, -9.81013e-11, -0.0506385, -0.00263999, 0.505764, 0.0836361 )
 mesh = SubResource( 7 )
-material/0 = null
+material/0 = SubResource( 2 )
 
 [node name="Person III\'s Right Leg" type="MeshInstance" parent="Person 3"]
-transform = Transform( -0.0589115, -0.00113054, -4.80595e-09, -0.000603521, 0.110355, 0, 5.15021e-09, 9.88348e-11, -0.0549737, -0.00111769, 0.505185, -0.0686538 )
+transform = Transform( -0.0589115, -0.00113054, -4.88944e-09, -0.000603521, 0.110355, 0, 5.12227e-09, 1.01863e-10, -0.0549737, -0.00111765, 0.505185, -0.0686538 )
 mesh = SubResource( 8 )
-material/0 = null
+material/0 = SubResource( 2 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="Person 3"]
 autoplay = "Person3Walk"
@@ -166,7 +171,12 @@ transform = Transform( 55.7494, 0.778237, -7.4414e-10, 0, -3.49691e-06, -1.75, -
 shape = SubResource( 11 )
 
 [node name="House" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.708165, 1.0669, 0.118374 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.07403, 0.755434, 1.19249 )
+
+[node name="Terry" type="MeshInstance" parent="House"]
+transform = Transform( -37.1539, -2.15594, 3.3062, 2.20917, 1.58673, 53.7633, -2.08529, 40.0937, -1.94994, -59.932, 37.157, 60.6386 )
+mesh = ExtResource( 13 )
+material/0 = SubResource( 12 )
 
 [node name="TV" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.733743, 0, 0, 0, 3.10051, 0, 0, 0, 2.75137, 81.6568, 6.89232, 0 )
@@ -190,11 +200,11 @@ transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 27.
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.306, 13.3481, -0.679947 )
 
 [node name="Person 2" parent="." instance=ExtResource( 10 )]
-transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -28.796, 19.0907, -89.8558 )
+transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -28.796, 11.8888, -73.9271 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Jump"
-anims/Jump = SubResource( 12 )
+anims/Jump = SubResource( 13 )
 
 [node name="FirstPersonPlayer" parent="." instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66404, 25.5394, 12.0303 )
