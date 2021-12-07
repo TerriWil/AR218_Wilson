@@ -58,7 +58,7 @@ mesh = SubResource( 3 )
 material/0 = SubResource( 2 )
 
 [node name="Person II\'s Left Leg" type="MeshInstance" parent="."]
-transform = Transform( 0.0288608, 0, 0, 0, 0.236559, -0.00435073, 0, 0.0410442, 0.0250755, 1.44284, 0.252088, 0 )
+transform = Transform( 0.0288608, 0, 0, 0, 0.217598, -0.0107557, 0, 0.101468, 0.0230657, 1.44284, 0.252088, 0 )
 mesh = SubResource( 4 )
 material/0 = SubResource( 2 )
 
@@ -68,7 +68,7 @@ mesh = SubResource( 5 )
 material/0 = SubResource( 2 )
 
 [node name="Person II\'s Right Leg" type="MeshInstance" parent="."]
-transform = Transform( 0.0265989, -0.00564814, 0, 0.000616695, 0.236493, 0.00435073, -0.000107, -0.0410328, 0.0250755, 1.2405, 0.246802, 0 )
+transform = Transform( 0.0265989, -0.00564815, 0, 0.000567266, 0.217538, 0.0107557, -0.000264521, -0.10144, 0.0230657, 1.2405, 0.246802, 0 )
 mesh = SubResource( 6 )
 material/0 = SubResource( 2 )
 
@@ -78,4 +78,5 @@ mesh = SubResource( 7 )
 material/0 = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Walk"
 anims/Walk = SubResource( 8 )
