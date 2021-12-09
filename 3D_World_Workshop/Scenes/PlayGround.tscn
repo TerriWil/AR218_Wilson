@@ -1,18 +1,17 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scenes/default_env.tres" type="Environment" id=1]
-[ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/TV.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Kitchen Table.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Bed.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Sofa.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/Table Chairs.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Bed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Kitchen Table.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/TV.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/House.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Table Chairs.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Sofa.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Person 1.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/Person 2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Terry.png" type="Texture" id=11]
-[ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/Terry.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Scenes/Terry.obj" type="ArrayMesh" id=12]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -111,7 +110,7 @@ tracks/0/keys = {
 "values": [ Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.7004, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 30.5166, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 13.6791, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 33.4108, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 15.3623, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 32.9949, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 17.8956, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 32.9895, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.9222, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 27.5507, 44.6437 ), Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 14.7004, 44.6437 ) ]
 }
 
-[node name="Mixed Emotions" type="Spatial"]
+[node name="PlayGround" type="Spatial"]
 
 [node name="Person 3" type="Spatial" parent="."]
 transform = Transform( -1.98163, 0, 29.0291, 0, 67.5464, 0, -32.6236, 0, -1.76329, 9.14075, -22.492, 24.2221 )
@@ -155,10 +154,10 @@ autoplay = "Person3Walk"
 anims/Person3Walk = SubResource( 9 )
 anims/RESET = SubResource( 10 )
 
-[node name="Table Chairs" parent="." instance=ExtResource( 8 )]
+[node name="Table Chairs" parent="." instance=ExtResource( 7 )]
 transform = Transform( 2.53374, 0, 0, 0, 6.46174, 0, 0, 0, 2.36078, -39.4921, 25.0748, -49.193 )
 
-[node name="Bed" parent="." instance=ExtResource( 6 )]
+[node name="Bed" parent="." instance=ExtResource( 3 )]
 transform = Transform( 12.0421, 0, 0, 0, 1.61564, 0, 0, 0, 1.60669, -38.5197, 10.8968, 50.5309 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -170,21 +169,21 @@ environment = ExtResource( 1 )
 transform = Transform( 55.7494, 0.778237, -7.4414e-10, 0, -3.49691e-06, -1.75, -0.542353, 79.9962, -7.64913e-08, 2.36708, 4.0776, -1.18443 )
 shape = SubResource( 11 )
 
-[node name="House" parent="." instance=ExtResource( 2 )]
+[node name="House" parent="." instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.07403, 0.755434, 1.19249 )
 
 [node name="Terry" type="MeshInstance" parent="House"]
 transform = Transform( -37.1539, -2.15594, 3.3062, 2.20917, 1.58673, 53.7633, -2.08529, 40.0937, -1.94994, -59.932, 37.157, 60.6386 )
-mesh = ExtResource( 13 )
+mesh = ExtResource( 12 )
 material/0 = SubResource( 12 )
 
-[node name="TV" parent="." instance=ExtResource( 3 )]
+[node name="TV" parent="." instance=ExtResource( 5 )]
 transform = Transform( 0.733743, 0, 0, 0, 3.10051, 0, 0, 0, 2.75137, 81.6568, 6.89232, 0 )
 
-[node name="Table" parent="." instance=ExtResource( 4 )]
+[node name="Table" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.00582941, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00582941, 77.5052, 0.165375, 0 )
 
-[node name="Sofa" parent="." instance=ExtResource( 7 )]
+[node name="Sofa" parent="." instance=ExtResource( 8 )]
 transform = Transform( 0.0215408, 0, 10.2852, 0, 7.13543, 0, -5.80334, 0, 0.0121542, 21.8302, 7.79512, -7.69935 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
@@ -196,15 +195,12 @@ omni_range = 512.8
 [node name="Person 1" parent="." instance=ExtResource( 9 )]
 transform = Transform( 15.111, 0, 0, 0, 42.5365, 0, 0, 0, 37.1644, -17.7302, 27.3239, 44.6437 )
 
-[node name="Kitchen Table" parent="." instance=ExtResource( 5 )]
+[node name="Kitchen Table" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 58.306, 13.3481, -0.679947 )
-
-[node name="Person 2" parent="." instance=ExtResource( 10 )]
-transform = Transform( 30.9993, 3.98642, -4.76394, -1.52573, 78.7002, 1.4009, 2.39734, -1.46033, 62.4927, -28.796, 11.8888, -73.9271 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Jump"
 anims/Jump = SubResource( 13 )
 
-[node name="FirstPersonPlayer" parent="." instance=ExtResource( 12 )]
+[node name="FirstPersonPlayer" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66404, 25.5394, 12.0303 )
