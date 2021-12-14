@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scenes/default_env.tres" type="Environment" id=1]
 [ext_resource path="res://Scenes/Table.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://FirstPersonPlayer/Player.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Terry.png" type="Texture" id=11]
 [ext_resource path="res://Scenes/Terry.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://addons/godot-oculus/scenes/oculus_first_person.tscn" type="PackedScene" id=13]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -204,3 +205,6 @@ anims/Jump = SubResource( 13 )
 
 [node name="FirstPersonPlayer" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66404, 25.5394, 12.0303 )
+visible = false
+
+[node name="OculusFirstPerson" parent="FirstPersonPlayer" instance=ExtResource( 13 )]
